@@ -114,10 +114,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Builder(
         builder: (context1) => Container(
             child: new Column(children: <Widget>[
-              new Flexible(
+              new Container(
                 child: Text("List 1"),
               ),
-          new Flexible(
+          new Expanded(
             child: ListView.builder(
                 //itemCount: products.length,
                 itemCount: count,
@@ -163,10 +163,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ));
                 }),
           ),
-          new Flexible(
+          new Container(
             child: Text("List 2"),
           ),
-          new Flexible(
+          new Expanded(
             child: ListView.builder(
                 //itemCount: products.length,
                 itemCount: count,
